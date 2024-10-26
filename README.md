@@ -4,7 +4,7 @@
 <a target="_blank" href="https://github.com/ivancarlosti/bkponrclone"><img src="https://img.shields.io/github/last-commit/ivancarlosti/bkponrclone" /></a>
 [![GitHub Sponsors](https://img.shields.io/github/sponsors/ivancarlosti?label=GitHub%20Sponsors)](https://github.com/sponsors/ivancarlosti)
 
-These scripts generate backup of webservers and databases for backup purposes and send it to BackBlase buckets configured on Rclone, also check BackBlaze repositories for outdated buckets and send email messages when find uptdated buckets to you through Amazon SES. You can change the script to fit it for other backup storage services and messaging.
+Backup Scripts gives ideas do generate backup of webservers and databases for backup purposes with option to send it to BackBlaze buckets configured on Rclone, also check BackBlaze repositories for outdated buckets and send email messages when find outdated buckets to you through Amazon SES. You can change the script to fit it for other backup storage services and messaging.
 
 ## Instructions
 
