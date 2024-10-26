@@ -9,4 +9,4 @@ RETDAYS=3                               # number of days to retain files before 
 docker exec -i $DOCKERNAME pg_dumpall -U $PGUSER > .$RELATPATH/$FILENAMEDATE.sql
 tar -czf .$RELATPATH/$FILENAMEDATE-DB.tar.gz --remove-files .$RELATPATH/$FILENAMEDATE.sql
 find .$RELATPATH -type f -mtime +$RETDAYS -exec rm {} \;
-chmod 0700 .$RELATPATH/$FILENAMEDATE-DB.tar.gz
+chmod 0600 .$RELATPATH/$FILENAMEDATE-DB.tar.gz
