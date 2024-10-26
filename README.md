@@ -10,11 +10,12 @@ These scripts generate backup of webservers and databases for backup purposes an
 
 * Setup `rclone.sh` file to run backup of webserver and MariaDB/MySQL or Postgres database
 * Setup `checkbackup.sh` file to check outdated buckets
-* Run `chmod +x rclone.sh` to make the script executable
+* Setup `bkppostgres.sh` file to backup entire Postgres database on a Docker
+* Run `chmod +x scriptfile.sh` to make the script executable
 * Run `crontab -e` to add execution line to run periodically
-  * Suggestion to run script `/home/username/rclone.sh` everyday at 02:00:
+  * Suggestion to run script `/home/username/scriptfile.sh` everyday at 02:00:
 ```
-0 2 * * * cd /home/username; ./rclone.sh  >/dev/null 2>&1
+0 2 * * * cd /home/username; ./scriptfile.sh  >/dev/null 2>&1
 ```
  
 #### Set password DB on file if needed to setup MariaDB/MySQL backup
@@ -30,5 +31,6 @@ These scripts generate backup of webservers and databases for backup purposes an
 ## Requirements
 
 * Linux Server
-* Rclone
-* BackBlaze bucket
+* MariaDB/MySQL or Postgres database if want backup of it
+* Rclone properly configured if want offsite backup
+* BackBlaze bucket if want offsite backup on BackBlaze
