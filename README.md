@@ -1,6 +1,10 @@
 # Backup Scripts
 Backup Scripts gives ideas do generate backup of webservers and databases for backup purposes with option to send it to BackBlaze buckets configured on Rclone, also check BackBlaze repositories for outdated buckets and send email messages when find outdated buckets to you through Amazon SES. You can change the script to fit it for other backup storage services and messaging.
 
+<!-- buttons -->
+
+<!-- endbuttons -->
+
 ## Instructions
 
 * Setup `rclone.sh` file to run backup of webserver and MariaDB/MySQL or Postgres database
